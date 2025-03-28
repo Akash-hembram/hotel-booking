@@ -99,7 +99,7 @@ section{
 
 .header .navbar a{
     font-size: 1.7rem;
-    color: var(--white);
+    color: var(--primary);
     margin: 0 1rem;
 }
 
@@ -113,8 +113,9 @@ section{
 }
 
 .header .navbar .btn:hover{
-    color: var(--black);
+    color: var(--white);
 }
+
 #menu-btn{
     display: none;
     font-size: 2.5rem;
@@ -124,7 +125,7 @@ section{
 }
 
 #menu-btn:hover{
-    color: var(--secondary);
+    color: var(--white);
 }
 /* end */
 
@@ -606,10 +607,11 @@ section{
     }
 }
 
-@media(max-width:768px){
+@media(max-width:  768px){
     #menu-btn{
         display: inline-block;
     }
+
     .header .navbar{
         position: absolute;
         top: 110%; right: -110%;
@@ -617,11 +619,12 @@ section{
         box-shadow: var(--box-shadow);
         background: var(--white);
         border-radius: .5rem;
-    }
-
-    .header .navbar .active{
-        right: 2rem;
         transition: .4s linear;
+    }    
+
+    .header .navbar.active{
+        right: 2rem;
+        
     }
 
     .header .navbar a{
@@ -639,9 +642,10 @@ section{
         padding: 1rem;
         padding-top: 15%;
     }
+
 }
 
-@media(max-width: 450px){
+@media (max-width: 450px){
     html{
         font-size: 50%;
     }
@@ -651,6 +655,6 @@ section{
     }
 
     .home .slide .content h3{
-        font-size: 3rem  ;
+        font-size: 3rem;
     }
 }

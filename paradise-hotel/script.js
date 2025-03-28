@@ -11,6 +11,7 @@ window.onscroll = () =>{
   navbar.classList.remove('active');
 }
 
+
 var swiper = new Swiper(".home-slider",{
   grabCursor:true,
   loop:true,
